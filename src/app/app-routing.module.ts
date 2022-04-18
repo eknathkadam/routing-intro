@@ -7,11 +7,17 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { GooglesigninComponent } from './signin/googlesignin/googlesignin.component';
+import { Component } from '@angular/core';
 
 const routes: Routes = [
   {path:"", redirectTo:"signup", pathMatch:"full"},
   {path:"signup",component:SignupComponent},
-  {path:"signin", component:SigninComponent},
+  {path:"signin", component:SigninComponent, children:[
+    {path:"googlesignin", component:GooglesigninComponent},
+    //{path:"", redirectTo:"googlesignin", pathMatch:"full"},
+
+  ]},
   {path:"forgotpassword",component:ForgotpasswordComponent},
   {path:"verifyemail",component:VerifyemailComponent},
   {path:"logout",component:LogoutComponent},

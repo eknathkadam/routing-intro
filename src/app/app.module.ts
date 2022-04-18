@@ -9,6 +9,7 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { GooglesigninComponent } from './signin/googlesignin/googlesignin.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ForgotpasswordComponent,
     VerifyemailComponent,
     LogoutComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    GooglesigninComponent
   ],
   imports: [
     BrowserModule,
