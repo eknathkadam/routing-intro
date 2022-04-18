@@ -12,4 +12,8 @@ export class SigninComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  routes =[
+    {linkname:"googlesignin", url:"googlesignin"},
+    {linkname:"emailsignin", url:"emailsignin"},
+  ];
 }

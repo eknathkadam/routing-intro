@@ -10,6 +10,8 @@ import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GooglesigninComponent } from './signin/googlesignin/googlesignin.component';
+import { EmailsigninComponent } from './signin/emailsignin/emailsignin.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { GooglesigninComponent } from './signin/googlesignin/googlesignin.compon
     VerifyemailComponent,
     LogoutComponent,
     PagenotfoundComponent,
-    GooglesigninComponent
+    GooglesigninComponent,
+    EmailsigninComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
